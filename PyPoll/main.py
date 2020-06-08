@@ -39,7 +39,7 @@ with open(csvpath, newline='') as csvfile:
     
     # second loop through the candidates and votes with previously obtained values
     # candidates_total.append adds each vote for candidates by using the .count function 
-    # percentage.append adds the percentage value for each candidate, round( ,) used to round decimals  
+    # percentage.append adds the percentage value for each candidate
     for candidate in candidate_list:
         candidates_total.append(votes.count(candidate))
         percentage.append(100 * (votes.count(candidate)) / (total_votes))
